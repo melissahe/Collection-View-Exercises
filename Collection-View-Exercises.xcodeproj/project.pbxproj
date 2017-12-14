@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		81DB211B1FE324EB003BB78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB211A1FE324EB003BB78A /* AppDelegate.swift */; };
-		81DB211D1FE324EB003BB78A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB211C1FE324EB003BB78A /* ViewController.swift */; };
+		81DB211D1FE324EB003BB78A /* ReviewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB211C1FE324EB003BB78A /* ReviewerViewController.swift */; };
 		81DB21201FE324EC003BB78A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DB211E1FE324EC003BB78A /* Main.storyboard */; };
 		81DB21221FE324EC003BB78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DB21211FE324EC003BB78A /* Assets.xcassets */; };
 		81DB21251FE324EC003BB78A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DB21231FE324EC003BB78A /* LaunchScreen.storyboard */; };
+		81DB21331FE331E3003BB78A /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB21321FE331E3003BB78A /* Review.swift */; };
+		81DB21351FE331F0003BB78A /* ReviewAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB21341FE331F0003BB78A /* ReviewAPIClient.swift */; };
+		81DB21371FE331FD003BB78A /* Critic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB21361FE331FD003BB78A /* Critic.swift */; };
+		81DB21391FE33209003BB78A /* CriticAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB21381FE33209003BB78A /* CriticAPIClient.swift */; };
+		81DB213B1FE33288003BB78A /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB213A1FE33288003BB78A /* NetworkHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81DB21171FE324EB003BB78A /* Collection-View-Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection-View-Exercises.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DB211A1FE324EB003BB78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81DB211C1FE324EB003BB78A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81DB211C1FE324EB003BB78A /* ReviewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewerViewController.swift; sourceTree = "<group>"; };
 		81DB211F1FE324EC003BB78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81DB21211FE324EC003BB78A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81DB21241FE324EC003BB78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81DB21261FE324EC003BB78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81DB21321FE331E3003BB78A /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		81DB21341FE331F0003BB78A /* ReviewAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAPIClient.swift; sourceTree = "<group>"; };
+		81DB21361FE331FD003BB78A /* Critic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Critic.swift; sourceTree = "<group>"; };
+		81DB21381FE33209003BB78A /* CriticAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriticAPIClient.swift; sourceTree = "<group>"; };
+		81DB213A1FE33288003BB78A /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		81DB21191FE324EB003BB78A /* Collection-View-Exercises */ = {
 			isa = PBXGroup;
 			children = (
-				81DB211A1FE324EB003BB78A /* AppDelegate.swift */,
-				81DB211C1FE324EB003BB78A /* ViewController.swift */,
+				81DB21301FE33168003BB78A /* Unused Stuff */,
+				81DB21311FE331C5003BB78A /* Models */,
+				81DB212E1FE33118003BB78A /* View Controllers */,
+				81DB212F1FE33122003BB78A /* Views */,
+				81DB213A1FE33288003BB78A /* NetworkHelper.swift */,
 				81DB211E1FE324EC003BB78A /* Main.storyboard */,
-				81DB21211FE324EC003BB78A /* Assets.xcassets */,
-				81DB21231FE324EC003BB78A /* LaunchScreen.storyboard */,
 				81DB21261FE324EC003BB78A /* Info.plist */,
 			);
 			path = "Collection-View-Exercises";
+			sourceTree = "<group>";
+		};
+		81DB212E1FE33118003BB78A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				81DB211C1FE324EB003BB78A /* ReviewerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		81DB212F1FE33122003BB78A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81DB21301FE33168003BB78A /* Unused Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				81DB211A1FE324EB003BB78A /* AppDelegate.swift */,
+				81DB21211FE324EC003BB78A /* Assets.xcassets */,
+				81DB21231FE324EC003BB78A /* LaunchScreen.storyboard */,
+			);
+			path = "Unused Stuff";
+			sourceTree = "<group>";
+		};
+		81DB21311FE331C5003BB78A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81DB21361FE331FD003BB78A /* Critic.swift */,
+				81DB21381FE33209003BB78A /* CriticAPIClient.swift */,
+				81DB21321FE331E3003BB78A /* Review.swift */,
+				81DB21341FE331F0003BB78A /* ReviewAPIClient.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +183,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81DB211D1FE324EB003BB78A /* ViewController.swift in Sources */,
+				81DB213B1FE33288003BB78A /* NetworkHelper.swift in Sources */,
+				81DB211D1FE324EB003BB78A /* ReviewerViewController.swift in Sources */,
+				81DB21391FE33209003BB78A /* CriticAPIClient.swift in Sources */,
 				81DB211B1FE324EB003BB78A /* AppDelegate.swift in Sources */,
+				81DB21371FE331FD003BB78A /* Critic.swift in Sources */,
+				81DB21331FE331E3003BB78A /* Review.swift in Sources */,
+				81DB21351FE331F0003BB78A /* ReviewAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
