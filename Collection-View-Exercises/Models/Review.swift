@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ReviewResultsWrapper {
+struct ReviewResultsWrapper: Codable {
     let results: [Review]
 }
 

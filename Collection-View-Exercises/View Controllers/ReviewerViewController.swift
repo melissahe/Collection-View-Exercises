@@ -18,7 +18,7 @@ class ReviewerViewController: UIViewController {
     //Collection View
     @IBOutlet weak var reviewCollectionView: UICollectionView!
     
-//    var review: [Review] = []
+    var review: [Review] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
