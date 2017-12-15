@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="420.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reviewerCell" textLabel="Vjw-Cb-vkZ" style="IBUITableViewCellStyleDefault" id="2YQ-1j-xA1">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="criticCell" textLabel="Vjw-Cb-vkZ" style="IBUITableViewCellStyleDefault" id="2YQ-1j-xA1">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2YQ-1j-xA1" id="shu-S6-d7G">
@@ -76,8 +76,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="criticTableView" destination="bkT-w1-Heq" id="DVi-TM-Ngf"/>
                         <outlet property="reviewCollectionView" destination="kgN-R8-j7a" id="Whf-la-pV0"/>
-                        <outlet property="reviewerTableView" destination="bkT-w1-Heq" id="DVi-TM-Ngf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

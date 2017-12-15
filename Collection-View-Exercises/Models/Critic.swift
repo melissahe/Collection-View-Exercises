@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ResultsWrapper: Codable {
+struct CriticResultsWrapper: Codable {
     let results: [Critic]
 }
 

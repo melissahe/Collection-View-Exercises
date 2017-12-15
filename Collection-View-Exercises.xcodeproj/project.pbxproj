@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81A1D59C1FE345640085621F /* ImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1D59B1FE345640085621F /* ImageAPIClient.swift */; };
 		81DB211B1FE324EB003BB78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB211A1FE324EB003BB78A /* AppDelegate.swift */; };
 		81DB211D1FE324EB003BB78A /* ReviewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DB211C1FE324EB003BB78A /* ReviewerViewController.swift */; };
 		81DB21201FE324EC003BB78A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DB211E1FE324EC003BB78A /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81A1D59B1FE345640085621F /* ImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIClient.swift; sourceTree = "<group>"; };
 		81DB21171FE324EB003BB78A /* Collection-View-Exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Collection-View-Exercises.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DB211A1FE324EB003BB78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81DB211C1FE324EB003BB78A /* ReviewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewerViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				81DB212E1FE33118003BB78A /* View Controllers */,
 				81DB212F1FE33122003BB78A /* Views */,
 				81DB213A1FE33288003BB78A /* NetworkHelper.swift */,
+				81A1D59B1FE345640085621F /* ImageAPIClient.swift */,
 				81DB211E1FE324EC003BB78A /* Main.storyboard */,
 				81DB21261FE324EC003BB78A /* Info.plist */,
 			);
@@ -186,6 +189,7 @@
 				81DB213B1FE33288003BB78A /* NetworkHelper.swift in Sources */,
 				81DB211D1FE324EB003BB78A /* ReviewerViewController.swift in Sources */,
 				81DB21391FE33209003BB78A /* CriticAPIClient.swift in Sources */,
+				81A1D59C1FE345640085621F /* ImageAPIClient.swift in Sources */,
 				81DB211B1FE324EB003BB78A /* AppDelegate.swift in Sources */,
 				81DB21371FE331FD003BB78A /* Critic.swift in Sources */,
 				81DB21331FE331E3003BB78A /* Review.swift in Sources */,

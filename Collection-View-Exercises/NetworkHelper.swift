@@ -11,6 +11,7 @@ import Foundation
 enum AppError: Error {
     case badURL(url: String)
     case badImageURL(url: String)
+    case badImageData
     case badStatusCode(code: Int)
     case couldNotParseJSON(rawError: Error)
     case noInternet
@@ -44,7 +45,7 @@ class NetworkHelper {
                     completionHandler(data)
                 }
             }
-        }
+        }.resume()
     }
     
 }
