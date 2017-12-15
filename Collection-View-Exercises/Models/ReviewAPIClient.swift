@@ -12,7 +12,10 @@ import UIKit
 class ReviewAPIClient {
     private init() {}
     static let manager = ReviewAPIClient()
-    func getReviews(from urlString: String, completionHandler: @escaping ([Review]) -> Void, errorHandler: @escaping (Error) -> Void) {
+    private let apiKey = "f17a6f246cf34666b4ccbf18bcb00469"
+    func getReviews(for critic: String, completionHandler: @escaping ([Review]) -> Void, errorHandler: @escaping (Error) -> Void) {
+        let urlString = "https://api.nytimes.com/svc/movies/v2/reviews/search.json?api-key=\(apiKey)&reviewer=\(critic)"
+        
         guard let url = URL(string: urlString) else {
             errorHandler(AppError.badImageURL(url: urlString))
             
